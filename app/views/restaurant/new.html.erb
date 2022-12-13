@@ -1,0 +1,19 @@
+<h1>Submit a new restaurant</h1>
+
+<%= form_with model:@restaurant do |form|%>
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+
+    <br>
+    <%= form.label :cuisine %>
+    <%= form.text_field :cuisine %>
+
+    <br>
+    <%= form.label :price_range %>
+    <%= form.text_field :price_range %>
+
+    <br>
+    <%= form.submit 'Add Restaurant' %>
+<% end %>
+
+<%= link_to 'Back to Home' , '/' %>
