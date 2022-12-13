@@ -1,0 +1,32 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Great+Vibes&family=Passion+One&family=Poiret+One&display=swap" rel="stylesheet">
+
+<div class="edit">
+<h2>Edit info for <%= @restaurant.name %></h2>
+
+<%= form_with model:@restaurant do |form|%>
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+
+    <br>
+    <%= form.label :cuisine %>
+    <%= form.text_field :cuisine %>
+
+    <br>
+    <%= form.label :price_range %>
+    <%= form.text_field :price_range %>
+
+    <br>
+    <%= form.label :description %>
+    <%= form.text_field :description %>
+
+    <br>
+    <%= form.submit 'Submit Changes' %>
+<% end %>
+<p>
+<span>
+<%= link_to 'Back to Home' , '/' %>
+<%= button_to 'Delete Restaurant', delete_restaurant_path(@restaurant), method: :delete, form: { data: { turbo_confirm: 'Are you sure?' } } %>
+</span>
+</div>

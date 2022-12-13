@@ -13,3 +13,66 @@
  *= require_tree .
  *= require_self
  */
+h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 40px;
+}
+
+.index, .show, .edit {
+    margin-left: 20px;
+    font-family: 'EB Garamond', serif;
+    width: 25%;
+}
+
+#add {
+    background-color: lightgray;
+    width: 150px;
+    height: 25px;
+    border-radius: 1rem;
+    text-align: center;
+    padding: 5px;
+}
+
+#add:hover {
+    background-color: lightblue;
+}
+
+#link {
+    margin: 3px;
+    padding-left: 10px;
+}
+
+#link:hover {
+    background-color: lightgray;
+}
+
+a:link { text-decoration: none; color: black}
+
+
+a:visited { text-decoration: none; color: black}
+
+
+a:hover { text-decoration: none; color: rgb(101, 76, 76)}
+
+
+a:active { text-decoration: none; }
+
+#description_field {
+    width: 300px;
+    height: 200px;
+}
+
+.form {
+    display:flex;
+    flex-direction: row;
+}
+
+.label {
+    display:flex;
+    width: 200px;
+}
+
+.text_field {
+    display:flex;
+    width: 200px;
+}

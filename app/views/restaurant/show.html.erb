@@ -1,2 +1,14 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Great+Vibes&display=swap" rel="stylesheet">
+
+<div class="show">
 <h1><%= @restaurant.name %></h1>
 <h2><%= @restaurant.cuisine %> - <%= @restaurant.price_range %></h2>
+<h3><%= @restaurant.description %>
+<p>
+<span>
+<%= link_to 'Edit this Restaurant', edit_restaurant_path %> || 
+<%= link_to 'Back to Main List', '/' %>
+</span>
+</div>
